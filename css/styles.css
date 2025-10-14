@@ -1,0 +1,174 @@
+/* --- Estilos Generales y Paleta de Colores --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e; /* Azul noche oscuro */
+    color: #e0e0e0; /* Texto gris claro */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- Encabezado: El Nido del Dragón --- */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(to bottom, #16222A, #3A6073); /* Textura sutil y gradiente */
+    border-bottom: 3px solid #f1c40f; /* Borde dorado */
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin: 0;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #f1c40f; /* Dorado pálido */
+}
+
+/* --- Navegación: Las Escamas del Viaje --- */
+nav {
+    background-color: #10101a;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #e0e0e0;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f1c40f; /* Resalta en dorado al pasar el cursor */
+}
+
+/* --- Secciones: Las Cuevas del Tesoro --- */
+section {
+    padding: 60px 20px;
+    border-bottom: 1px solid #333;
+}
+
+section h2 {
+    font-size: 2.2em;
+    color: #f1c40f;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* --- Estilos del Carrusel de Proyectos --- */
+.carousel-container {
+    position: relative;
+    max-width: 600px; /* Ancho máximo del carrusel */
+    margin: auto;
+    overflow: hidden; /* Oculta los proyectos que no están activos */
+}
+
+.carousel-slides {
+    display: flex; /* Permite que los proyectos se pongan en fila */
+    transition: transform 0.5s ease-in-out; /* Animación de deslizamiento */
+}
+
+.project-card {
+    min-width: 100%; /* Cada proyecto ocupa todo el ancho del contenedor */
+    box-sizing: border-box;
+    background-color: #2c2c54;
+    border: 1px solid #444;
+    border-radius: 8px;
+    display: none; /* Ocultos por defecto */
+}
+
+.project-card.active {
+    display: block; /* Muestra solo el proyecto activo */
+}
+        
+.project-card .placeholder-img {
+    height: 250px;
+    background-color: #40407a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: #aaa;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-content h3 {
+    margin-top: 0;
+    color: #f1c40f;
+}
+        
+.project-content a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(241, 196, 15, 0.7); /* Dorado semitransparente */
+    border: none;
+    color: #10101a;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    user-select: none; /* Evita que el texto del botón se seleccione */
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+    background-color: rgba(241, 196, 15, 1);
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+
+/* --- Sobre Mí y Contacto --- */
+#sobre-mi {
+    background-color: #10101a;
+}
+
+#contacto p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#contacto a {
+    color: #f1c40f;
+}
+
+/* --- Pie de Página --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #10101a;
+    color: #888;
+}
